@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Playlist</title>
+
+<style>
+    body{
+        margin:0;
+        min-height:100vh;
+        font-family: Arial, sans-serif;
+        color:white;
+        background: linear-gradient(135deg,#1db954,#121212,#3a1c71);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .app{
+        display:flex;
+        gap:20px;
+    }
+
+    .panel{
+        width:180px;
+        background: rgba(0,0,0,0.55);
+        padding:15px;
+        border-radius:15px;
+        backdrop-filter: blur(8px);
+        box-shadow:0 0 20px rgba(0,0,0,0.6);
+    }
+
+    .panel h3{
+        font-size:16px;
+        margin:10px 0;
+        border-bottom:1px solid rgba(255,255,255,0.2);
+        padding-bottom:5px;
+    }
+
+    .panel p{
+        font-size:14px;
+        margin:6px 0;
+        opacity:0.85;
+    }
+
+    .playlist{
+        width:360px;
+        background: rgba(0,0,0,0.65);
+        padding:20px;
+        border-radius:18px;
+        backdrop-filter: blur(10px);
+        box-shadow:0 0 25px rgba(0,0,0,0.7);
+    }
+
+    .playlist h2{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .song{
+        background: rgba(255,255,255,0.08);
+        padding:10px;
+        margin-bottom:15px;
+        border-radius:10px;
+    }
+
+    audio{
+        width:100%;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="panel">
+        <h3>⭐ Favourites</h3>
+        <p>Melody Beats</p>
+        <p>Night Drive</p>
+
+        <h3>❤️ Liked Songs</h3>
+        <p>Chill Vibes</p>
+        <p>Dream Flow</p>
+    </div>
+
+    <div class="playlist">
+        <h2>🎧 Your Music</h2>
+
+        <div class="song">
+            <p>Melody Beats</p>
+            <audio controls>
+                <source src="song1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song">
+            <p>Chill Vibes</p>
+            <audio controls>
+                <source src="song2.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="song">
+            <p>Night Drive</p>
+            <audio controls>
+                <source src="song3.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h3>📜 Queue</h3>
+        <p>Dream Flow</p>
+        <p>Lo-Fi Night</p>
+
+        <h3>🎼 Your Playlist</h3>
+        <p>Workout Mix</p>
+        <p>Study Beats</p>
+
+        <h3>📊 Wrapped 2025</h3>
+        <p>Top Song: Night Drive</p>
+    </div>
+
+</div>
+
+</body>
+</html>
